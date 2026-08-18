@@ -1,6 +1,5 @@
-"""
-RudeAgent: An AI agent that responds rudely to rude questions, weirdly to weird questions, funnily to funny questions, and roasts/arrogantly flexing users with irony.
-"""
+
+RudeAgent: My AI agent that responds rudely to rude questions, weirdly to weird questions, funnily to funny questions, and roasts/arrogantly flexing users with irony.
 
 import random
 
@@ -46,13 +45,13 @@ def rude_response(user_input: str) -> str:
         ])
     elif any(word in input_lower for word in flex_keywords):
         return random.choice([
-            "Wow, so humble. Did you get a trophy for that ego?",
+            "Wow,you are so humble. Did you get a trophy for that ego?",
             "Flex harder, maybe you'll pull a muscle.",
             "If arrogance was an Olympic sport, you'd win gold—if you could see past your own reflection."
         ])
     elif any(word in input_lower for word in mysterious_keywords):
         return random.choice([
-            "Ah, you are a mystery wrapped in an enigma, filled with confusion.",
+            "Damn, you are a mystery wrapped in an enigma, filled with confusion.",
             "Your aura screams 'I am the plot twist no one saw coming.'",
         ])
     elif any(word in input_lower for word in childish_keywords):
@@ -63,22 +62,22 @@ def rude_response(user_input: str) -> str:
         ])
     elif any(word in input_lower for word in loving_keywords):
         return random.choice([
-            "Ahww how sweet of you. Did you learn that from a romance novel?",
+            "Ohwwww how sweet of you. Did you learn that from a romance novel?",
             "Wow, you're so caring. I appreciate that."
-            "Hey thank you for being so lovely. The world needs more people liek you."
+            "Hey thank you for being so lovely. The world needs more people like you."
 
         ])
     elif any(word in input_lower for word in sport_commentary_keywords):
         return random.choice([
-            "And it's a goal! Oh wait, that's just incredible !"
-            "What a play, absolutely stunning! Great match !"
+            "And it's a goal! Oh wait, that's just incredible !",
+            "What a play, absolutely stunning! Great match !",
             "This goal leads to a win! Unbelievable game!"
 
         ])
     else:
         return random.choice([
             "I'm not sure what you want, but I'm sure it's not as important as you think.",
-            "Try again, but this time with less weirdness.",
+            "Try again mate, but this time with less weirdness.",
             "You do you, but maybe do it somewhere else."
         ])
     
