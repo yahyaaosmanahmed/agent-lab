@@ -22,8 +22,7 @@ def rude_response(user_input: str) -> str:
             return "Like you? Let's not get ahead of ourselves."
         # Add more checks for other question type as needed
 
-    # ... your existing and current logic ...
-    input_lower = user_input.lower()
+    
     
     if any(word in input_lower for word in rude_keywords):
         return random.choice([
@@ -56,14 +55,14 @@ def rude_response(user_input: str) -> str:
         ])
     elif any(word in input_lower for word in childish_keywords):
         return random.choice([
-            "Oh look at you, acting all grown up. How adorable."
-            "Did you learn that fromn a cartoon? Because it sounds like something a 5-years old would say."
+            "Oh look at you, acting all grown up. How adorable.",
+            "Did you learn that fromn a cartoon? Because it sounds like something a 5-years old would say.",
             "If you keep acting like that, you're going to get a time-out."
         ])
     elif any(word in input_lower for word in loving_keywords):
         return random.choice([
             "Ohwwww how sweet of you. Did you learn that from a romance novel?",
-            "Wow, you're so caring. I appreciate that."
+            "Wow, you're so caring. I appreciate that.",
             "Hey thank you for being so lovely. The world needs more people like you."
 
         ])
