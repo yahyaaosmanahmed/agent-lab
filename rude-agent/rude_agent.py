@@ -5,6 +5,7 @@ RudeAgent: An AI agent that responds rudely to rude questions, weirdly to weird 
 import random
 
 def rude_response(user_input: str) -> str:
+    input_lower = user_input.lower()
     rude_keywords = ["stupid", "idiot", "dumb", "hate", "annoying", "useless", "dumbass", "trash",]
     weird_keywords = ["alien", "ghost", "unicorn", "dimension", "portal", "braincell", "freak", "bizarre"]
     funny_keywords = ["joke", "laugh", "funny", "hilarious", "pun", "hahaha", "lmao", "lmfao"]
